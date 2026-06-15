@@ -5,19 +5,212 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy - Resistor SMD Decoder</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 640px; margin: 0 auto; padding: 40px 20px; color: #333; line-height: 1.6; }
-  h1 { color: #1a1a1a; font-size: 24px; }
-  p { margin: 16px 0; }
-  hr { border: none; border-top: 1px solid #eee; margin: 32px 0; }
-  .footer { color: #888; font-size: 14px; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: #f5f6fa;
+    color: #2d3436;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: linear-gradient(135deg, #0c2461 0%, #1e3799 50%, #0c2461 100%);
+    padding: 48px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.05) 0%, transparent 50%);
+  }
+
+  header h1 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+    letter-spacing: -0.5px;
+  }
+
+  header p {
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+    margin-top: 8px;
+    position: relative;
+  }
+
+  .container {
+    flex: 1;
+    max-width: 680px;
+    width: 100%;
+    margin: -32px auto 0;
+    padding: 0 20px 48px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    padding: 40px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e3799;
+    margin: 28px 0 12px;
+  }
+
+  .card h2:first-child { margin-top: 0; }
+
+  .card p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 12px;
+  }
+
+  .card ul {
+    list-style: none;
+    margin: 16px 0;
+  }
+
+  .card ul li {
+    padding: 12px 16px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .card ul li .icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .icon-offline { background: #e8f5e9; }
+  .icon-nodata { background: #e3f2fd; }
+  .icon-noperm { background: #fff3e0; }
+
+  .divider {
+    height: 1px;
+    background: #eee;
+    margin: 32px 0;
+  }
+
+  .contact-box {
+    background: linear-gradient(135deg, #f8f9fa, #fff);
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .contact-box p { margin-bottom: 4px; color: #777; font-size: 14px; }
+
+  .contact-box a {
+    color: #1e3799;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .contact-box a:hover { text-decoration: underline; }
+
+  .badge {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #2e7d32;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: #bbb;
+    font-size: 13px;
+  }
+
+  @media (max-width: 520px) {
+    header { padding: 36px 20px; }
+    header h1 { font-size: 22px; }
+    .card { padding: 24px; border-radius: 12px; }
+    .container { margin-top: -24px; }
+  }
 </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p><strong>Resistor SMD Decoder</strong> does not collect, store, or share any personal data.</p>
-<p>The app works entirely offline and does not require any permissions. No internet connection is needed. No analytics, ads, or third-party services are used.</p>
-<p>If you have any questions, contact: <a href="mailto:karagatostudios@gmail.com">karagatostudios@gmail.com</a></p>
-<hr>
-<p class="footer"><em>Last updated: June 2026</em></p>
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p>Resistor SMD Decoder</p>
+</header>
+
+<div class="container">
+  <div class="card">
+
+    <span class="badge">&#10003; Last updated: June 2026</span>
+
+    <p>Your privacy matters. This page explains what data <strong>Resistor SMD Decoder</strong> collects — and more importantly, what it doesn't.</p>
+
+    <h2>No Data Collection</h2>
+    <p>Resistor SMD Decoder <strong>does not collect, store, or share</strong> any personal information. The app has no sign-in, no accounts, and no tracking.</p>
+
+    <ul>
+      <li>
+        <span class="icon icon-offline">&#9889;</span>
+        <span><strong>Works offline</strong> — No internet connection required, ever.</span>
+      </li>
+      <li>
+        <span class="icon icon-nodata">&#128274;</span>
+        <span><strong>No data stored</strong> — No logs, no cookies, no analytics.</span>
+      </li>
+      <li>
+        <span class="icon icon-noperm">&#128196;</span>
+        <span><strong>No permissions</strong> — No camera, location, storage, or network access.</span>
+      </li>
+    </ul>
+
+    <h2>Third Parties</h2>
+    <p>This app contains no third-party analytics, advertising SDKs, or external services of any kind.</p>
+
+    <div class="divider"></div>
+
+    <div class="contact-box">
+      <p>Have questions?</p>
+      <a href="mailto:karagatostudios@gmail.com">karagatostudios@gmail.com</a>
+    </div>
+
+  </div>
+</div>
+
+<footer>&copy; 2026 Karagato Studios</footer>
+
 </body>
 </html>
